@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>id selector</title>
+    <style>
+      button {
+        color: white;
+        border: none;
+        width: 100px;
+        height: 30px;
+      }
+
+      /* match any element having id as button-save */
+      #button-save {
+        background-color: green;
+      }
+
+      /* match only button having id button-cancel */
+      button#button-cancel {
+        background-color: rgb(89, 0, 255);
+      }
+
+      #button-delete {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>id selector demo</h1>
+
+    <button id="button-save">save</button>
+    <button id="button-cancel">cancel</button>
+    <button id="button-delete">Delete</button>
+
+    <div id="button-cancel">this is a div</div>
+    <div id="button-delete">this is a div2</div>
+  </body>
+</html>
